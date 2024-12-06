@@ -1,0 +1,60 @@
+          Mini-projet 2 : Modélisation de graphes en SMT-LIB
+                            fichier RENDU
+                     (à remplir obligatoirement)
+
+ **Un mini-projet sans fichier RENDU rempli ne recevra pas de note.**
+
+Date limite: 15 décembre 2024 à 22:00
+
+Identité
+--------
+Nombre de binôme: **à remplir**
+Nom, prénom 1: **à remplir**
+Nom, prénom 2: **à remplir**
+
+
+
+Consignes de rendu pour le projet
+
+Votre rendu doit inclure les fichiers suivants :
+
+    Ce fichier RENDU complété (avec vos réponses aux questions ci-dessous).
+
+    Le fichier exo11.z3, correspondant à la réponse à la question 1 de l'exercice 1.
+
+    Les fichiers exo12a.z3, exo12b.z3, ..., pour la question 2 de l'exercice 1. Vous devez fournir autant de fichiers que nécessaire pour couvrir cette question.
+
+    Le fichier generate.ml, contenant le code de la fonction OCaml demandée dans l'exercice 2, ainsi que les éventuelles fonctions auxiliaires nécessaires.
+        Compilation attendue : L'exécution de la commande suivante doit fonctionner sans erreur :
+
+        ocamlc generate.ml -o exec
+
+        Cette commande doit produire un exécutable nommé exec.
+        Exécution attendue : Lors de l'exécution de exec, l'utilisateur devra entrer les valeurs suivantes :
+            s : nombre de sommets
+            d : degré des sommets
+            c : taille de la clique
+        Le programme doit ensuite générer un fichier instance.z3 correspondant aux valeurs données.
+
+Questions à remplir sur votre code
+Exercice 1
+
+    Avez-vous vérifié que Z3 accepte les fichiers exo11.z3, exo12a.z3, exo12b.z3, ... et qu'il produit les résultats escomptés ?
+    Réponse :
+   **à remplir**
+
+Exercice 2
+
+    Avez-vous vérifié que le fichier generate.ml compile sans erreurs ni avertissements, et que Z3 accepte le fichier généré instance.z3 ?
+    Réponse :
+   **à remplir**
+
+    Quelles instances du problème avez-vous testées ? Quelles sont les limites de cette approche sur la machine que vous avez utilisée ?
+    Réponse :
+   **à remplir**
+
+Remarques supplémentaires (optionnel)
+
+    Avez-vous d'autres observations ou commentaires sur votre rendu ?
+    Réponse :
+   **à remplir**
