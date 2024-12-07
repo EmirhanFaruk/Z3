@@ -41,7 +41,12 @@ Exercice 1
 
     Avez-vous vérifié que Z3 accepte les fichiers exo11.z3, exo12a.z3, exo12b.z3, ... et qu'il produit les résultats escomptés ?
     Réponse :
-   **à remplir**
+    
+        - Fichier exo11.z3 (s = 4, d = 3, c = 3) : unsat, cela affiche une erreur, donc aucun graphe valide avec les contraintes.  
+        - Fichier exo12a.z3 (s = 5, d = 3, c = 3) :unsat, cela donne également le meme résultat, donc aucun graphe valide avec les contraintes.  
+        - Fichier exo12b.z3 (s = 6, d = 3, c = 3) : sat, cela signifie qu'il y a bien une solution et il y a égalemnt le modele retourné represente les aretes du graphe qui satisfont les contraintes.  
+
+       Donc la plus petite instance résoluble de n est 6
 
 Exercice 2
 
