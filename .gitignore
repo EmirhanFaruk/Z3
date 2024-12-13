@@ -31,3 +31,7 @@ _opam/
 .idea
 
 .DS_STORE
+
+generate
+
+output.z3
