@@ -52,11 +52,45 @@ Exercice 2
 
     Avez-vous vérifié que le fichier generate.ml compile sans erreurs ni avertissements, et que Z3 accepte le fichier généré instance.z3 ?
     Réponse :
-   **à remplir**
+
+ Nous avons bien vérifié que le fichier generate.ml compile sans erreurs ni avertissements et Z3 accepte bien le fichier output.z3 car le fichier est conforme a la syntaxe SMT-LIB.
 
     Quelles instances du problème avez-vous testées ? Quelles sont les limites de cette approche sur la machine que vous avez utilisée ?
     Réponse :
-   **à remplir**
+   
+On a fait plusieurs instances du probleme en changeant les valeurs de s, d et c.
+
+- Exemple : 
+./generate
+Entrez le nombre de sommets (s):
+4
+Entrez la valeur de degré minimal (d):
+1
+Entrez la valeur de la taille maximale de clique (c):
+3
+Le fichier output.z3 a été généré.
+
+ z3 output.z3 
+sat
+(
+  (define-fun A ((x!0 S) (x!1 S)) Bool
+    (let ((a!1 (not (and (= x!0 s2) (not (= x!0 s3)) (= x!1 s3))))
+          (a!2 (not (and (= x!0 s2)
+                         (not (= x!0 s3))
+                         (= x!1 s2)
+                         (not (= x!1 s3)))))
+          (a!3 (not (and (= x!0 s3) (= x!1 s2) (not (= x!1 s3)))))
+          (a!4 (not (and (not (= x!0 s2))
+                         (not (= x!0 s3))
+                         (not (= x!1 s2))
+                         (not (= x!1 s3))))))
+      (and a!1 (not (and (= x!0 s3) (= x!1 s3))) a!2 a!3 a!4)))
+)
+
+
+Les limites de l'approche utilisée sont que le temps d'exécution peut devenir tres long pour des instances complexes, avec une augmentation de la consommation de mémoire, 
+surtout pour les graphes de grande taille. La performance est limitee par l'augmentation du nombre de sommets, du degre minimal et de la taille maximale de clique.
+
 
 Remarques supplémentaires (optionnel)
 
